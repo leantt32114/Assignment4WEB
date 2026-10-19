@@ -1,0 +1,178 @@
+body.page-train {
+    --green: #0F6B5F;
+    --amber: #F2A93B;
+    --ink: #16302B;
+    --field: #F4F7F5;
+    --mist: #E6EFEC;
+    --bs-body-font-family: 'Montserrat',sans-serif;
+    --bs-body-color: #16302B;
+    background: var(--mist);
+    font-family: 'Montserrat',sans-serif;
+    color: var(--ink);
+    font-size: .8rem;
+}
+
+body.page-train .ticket {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 14px 40px rgba(15,107,95,.18);
+    overflow: hidden;
+}
+
+body.page-train .ticket-head {
+    background: var(--green);
+    color: #fff;
+    padding: 1.1rem 1.5rem;
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+body.page-train .ticket-body {
+    padding: 1.5rem;
+}
+
+body.page-train .form-label,
+body.page-train legend {
+    font-weight: 600;
+    font-size: .75rem;
+    margin-bottom: .35rem;
+    color: var(--ink);
+}
+
+body.page-train legend {
+    float: none;
+    width: auto;
+}
+
+body.page-train .form-control,
+body.page-train .form-select {
+    background-color: var(--field);
+    border: 1px solid var(--mist);
+    border-radius: 10px;
+    font-size: .78rem;
+    color: var(--ink);
+}
+
+body.page-train .form-control:focus,
+body.page-train .form-select:focus,
+body.page-train .form-check-input:focus,
+body.page-train .btn:focus-visible {
+    border-color: var(--green);
+    box-shadow: 0 0 0 .2rem rgba(15,107,95,.25);
+}
+
+body.page-train .form-floating>label {
+    color: #7a8f8a;
+    font-size: .7rem;
+}
+
+body.page-train .form-floating>label::after {
+    background: transparent!important;
+}
+
+body.page-train .form-check-input:checked {
+    background-color: var(--green);
+    border-color: var(--green);
+}
+
+body.page-train .trip .btn {
+    border-radius: 0;
+    font-weight: 600;
+    font-size: .75rem;
+    padding: .3rem 1.1rem;
+    color: var(--green);
+    border-color: var(--green);
+}
+
+body.page-train .trip .btn-check:first-child+.btn {
+    border-radius: 999px 0 0 999px;
+}
+
+body.page-train .trip .btn:last-child {
+    border-radius: 0 999px 999px 0;
+}
+
+body.page-train .btn-check:checked+.btn {
+    background: var(--green);
+    color: #fff;
+    border-color: var(--green);
+}
+
+body.page-train .trip .btn:hover {
+    background: var(--mist);
+    color: var(--green);
+}
+
+body.page-train .trip .btn-check:checked+.btn:hover {
+    background: var(--green);
+    color: #fff;
+}
+
+body.page-train .input-group-text {
+    background: var(--green);
+    color: #fff;
+    border: 0;
+    border-radius: 10px 0 0 10px;
+    font-weight: 700;
+    font-size: .75rem;
+}
+
+body.page-train .input-group .form-control {
+    border-radius: 0 10px 10px 0;
+}
+
+body.page-train .btn-find {
+    background: var(--amber);
+    color: var(--ink);
+    border: 0;
+    border-radius: 999px;
+    font-weight: 700;
+    padding: .4rem 1.5rem;
+    font-size: .78rem;
+}
+
+body.page-train .btn-find:hover {
+    background: #e29a2b;
+    color: var(--ink);
+}
+
+body.page-train .btn-clear {
+    background: #fff;
+    border: 1px solid var(--ink);
+    color: var(--ink);
+    border-radius: 999px;
+    font-weight: 600;
+    padding: .4rem 1.5rem;
+    font-size: .78rem;
+}
+
+body.page-train .btn-clear:hover {
+    background: var(--mist);
+    color: var(--ink);
+}
+
+
+body.page-hack .form-control:user-invalid,
+body.page-hack .form-select:user-invalid {
+    border-color: #dc3545;
+}
+
+body.page-hack .form-control:user-valid,
+body.page-hack .form-select:user-valid {
+    border-color: #198754;
+}
+
+body.page-hack .form-control:user-invalid ~ .invalid-feedback,
+body.page-hack .form-select:user-invalid ~ .invalid-feedback,
+body.page-hack .form-check-input:user-invalid ~ .invalid-feedback {
+    display: block;
+}
+
+body.page-hack .form-check-input:user-invalid {
+    border-color: #dc3545;
+}
+
+body.page-hack .radio-group:has(input:user-invalid) ~ .invalid-feedback {
+    display: block;
+}
